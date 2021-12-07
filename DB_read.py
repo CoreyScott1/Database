@@ -6,12 +6,12 @@ import sqlite3
 con = sqlite3.connect("Students")
 cur = con.cursor()
 
-rows = cur.execute("""
-SELECT StudentFirstName FROM Students
-""").fetchall()
+row = cur.execute('SELECT * FROM Students')
+print("new")
+print(row)
 
 
 
 
 
-print(rows)
+

@@ -20,7 +20,7 @@ def Write():
 
 	cur.execute("""
 	INSERT INTO Students VALUES (?,?,?,?)
-	""",IDinput,FNAMEinput,SNAMEinput,AGEinput)
+	""",(IDinput,FNAMEinput,SNAMEinput,AGEinput))
 
 def Read():
 	print("temp")
