@@ -1,0 +1,10 @@
+Language = "python3"
+run = """
+#python3 DB_create.py
+#python3 DB_add.py
+#python3 DB_read.py
+#python3 DB_GUI.py
+python3 DB_TGUI.py
+"""
+
+
