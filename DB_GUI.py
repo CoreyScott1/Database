@@ -27,6 +27,7 @@ def Read():
 
 
 
+
 root = Tk()
 root.title("Student Database")
 root.geometry("380x400")
@@ -55,9 +56,10 @@ sAGE.grid(column=4, row=8)
 ttk.Button(root, text="Submit", command = Write).grid(column=4, row=9)
 ttk.Button(root, text="Read Data", command = Read).grid(column=4, row=10)
 
-#cur.execute("""
-#INSERT INTO Students VALUES (?,?,?,?)
-#"""),(IDinput,FNAMEinput,SNAMEinput,AGEinput)
+ttk.Label(root, text = "ID").grid(column=6,row=2)
+ttk.Label(root, text = "Fname").grid(column=8,row=2)
+ttk.Label(root, text = "Sname").grid(column=10,row=2)
+ttk.Label(root, text = "Age").grid(column=12,row=2)
 
 root.mainloop()
 

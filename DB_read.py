@@ -6,9 +6,12 @@ import sqlite3
 con = sqlite3.connect("Students")
 cur = con.cursor()
 
-row = cur.execute('SELECT * FROM Students')
-print("new")
-print(row)
+
+for row in cur.execute('SELECT * FROM Students'):
+	print("new")
+	print(row)
+
+con.close()
 
 
 

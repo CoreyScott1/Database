@@ -5,5 +5,7 @@ cur = con.cursor()
 
 cur.execute("""
 CREATE TABLE Students
-(StudentID INTERGER, StudentFirstName TEXT(15), StudentLastName TEXT(15), StudentAge INTERGER(2))
+(StudentID text, StudentFirstName text, StudentLastName text, StudentAge text)
 """)
+
+con.close()

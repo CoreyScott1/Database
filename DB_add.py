@@ -4,5 +4,7 @@ con = sqlite3.connect("Students")
 cur = con.cursor()
 
 cur.execute("""
-INSERT INTO Students VALUES (324,'Corey','Scott',16)
+INSERT INTO Students VALUES ('324','Corey','Scott','16')
 """)
+
+con.close()
